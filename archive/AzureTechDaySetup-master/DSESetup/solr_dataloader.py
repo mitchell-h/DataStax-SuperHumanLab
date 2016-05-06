@@ -182,7 +182,7 @@ def load_geo_data(session, geopath):
 if __name__ == '__main__':
     meta_path = 'metadata.json'
     geo_path = 'geodata.csv'
-    cluster = Cluster(['10.0.0.6', '10.0.0.5', '10.0.0.7'])
+    cluster = Cluster(['127.0.0.1'])
     session = cluster.connect()
     session.execute(META_CF_DROP_STATEMENT)
     session.execute(RANK_CF_DROP_STATEMENT)

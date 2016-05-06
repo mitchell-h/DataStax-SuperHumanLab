@@ -47,7 +47,7 @@ sudo service dse start
 
 #### Creating a Keyspace, Table, and Queries 
 
-Try the following CQL commands in DevCenter. In addition to DevCenter, you can also use **CQLSH** as an interactive command line tool for CQL access to Cassandra. Start CQLSH like this:
+Start CQLSH like this:
 
 ```cqlsh 10.0.0.5``` 
 > Make sure to replace 127.0.0.1 with the IP of the respective node 
@@ -128,7 +128,7 @@ Let's give it a shot.
 >Any query will now be traced. **Consistency** of all means all 3 replicas need to respond to a given request (read OR write) to be successful. Let's do a **SELECT** statement to see the effects.
 
 ```
-SELECT * FROM <yourkeyspace>.sales where name='<enter name>';
+select * from amazon.metadata where asin = '0027676307';
 ```
 
 How did we do? 
@@ -145,7 +145,7 @@ Let's try the **SELECT** statement again. Any changes in latency?
 consistency local_one
 ```
 ```
-SELECT * FROM <yourkeyspace>.sales where name='<enter name>';
+select * from metadata where asin = '0027676307';
 ```
 
 Take a look at the trace output. Look at all queries and contact points. What you're witnessing is both the beauty and challenge of distributed systems. 
@@ -154,7 +154,7 @@ Take a look at the trace output. Look at all queries and contact points. What yo
 consistency local_quorum
 ```
 ```
-SELECT * FROM <yourkeyspace>.sales where name='<enter name>';
+select * from amazon.metadata where asin = '0027676307';
 ```
 
 >This looks much better now doesn't it? **LOCAL_QUORUM** is the most commonly used consistency level among developers. It provides a good level of performance and a moderate amount of consistency. That being said, many use cases can warrant  **CL=LOCAL_ONE**. 

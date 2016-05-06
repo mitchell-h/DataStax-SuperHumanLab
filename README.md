@@ -1,4 +1,4 @@
-https://github.com/mitchell-h/DataStaxDay/blob/master/README.md
+https://github.com/mitchell-h/DataStax-SuperHumanLab/README.md
 
 
 Welcome to DataStax Essentials Day!

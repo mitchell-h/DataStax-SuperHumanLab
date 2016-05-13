@@ -12,23 +12,6 @@ In this session, you'll learn all about DataStax Enterprise. It's a mix between 
 
 Hands On Setup
 -------------
-
-#### UI's you'll want to play around with
- 
- - OpsCenter: http://:8888/opscenter/index.html
- - Spark Master: http://:7080/
- - Solr UI: http://:8983/solr/#/
-
-
-----------
-
-
-Hands On DSE Cassandra 
--------------------
-
-Cassandra is the brains of DSE. It's an awesome storage engine that handles replication, availability, structuring, and of course, storing the data at lightning speeds. It's important to get yourself acquainted with the Cassandra to fully utilize the power of the DSE Stack. 
-
-
 To enable Search and Analytics on your cluster you will need to do the following on all of your DataStax nodes
 
 Stop DSE
@@ -44,6 +27,12 @@ Start DSE
 ```
 sudo service dse start
 ```
+
+Hands On DSE Cassandra 
+-------------------
+
+Cassandra is the brains of DSE. It's an awesome storage engine that handles replication, availability, structuring, and of course, storing the data at lightning speeds. It's important to get yourself acquainted with the Cassandra to fully utilize the power of the DSE Stack. 
+
 
 #### Creating a Keyspace, Table, and Queries 
 

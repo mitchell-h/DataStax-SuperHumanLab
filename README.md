@@ -28,6 +28,15 @@ Start DSE
 sudo service dse start
 ```
 
+Load Demo Data
+-------------------
+
+Become root: sudo su -
+
+wget https://raw.githubusercontent.com/mitchell-h/DataStax-SuperHumanLab/master/LoadDemoData.sh
+
+bash LoadDemoData.sh
+
 Hands On DSE Cassandra 
 -------------------
 
